@@ -22,7 +22,7 @@
             <div class="line" id="line3"></div>
         </div>
 
-        <header>
+        <header id="topc0">
             <div class="img-wrapper">
                 <img src="Imagens/img1-header.jpg" alt="Imagem">
             </div>
@@ -38,23 +38,23 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="#"class="menu-link">Home<a>
+                        <a href="#topc0"class="menu-link">Home<a>
                     </li>
     
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Conhecimentos</a>
+                        <a href="#topc1" class="menu-link">Conhecimentos</a>
                     </li>
     
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Projetos</a>
+                        <a href="#topc2" class="menu-link">Projetos</a>
                     </li>
     
                     <li class="menu-item">
-                    <a href="#" class="menu-link">Contatos</a>
+                        <a href="#topc3" class="menu-link">Contatos</a>
                     </li>
                     
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Orçamento</a>
+                        <a href="#topc4" class="menu-link">Orçamento</a>
                     </li>
                 </ul>
             </nav>
@@ -66,7 +66,7 @@
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="topc1">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -133,7 +133,7 @@
             </div>
         </section>
 
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="topc2">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -177,7 +177,7 @@
         </section>
     </div>
 
-    <section class="sessao-contato">
+    <section class="sessao-contato" id="topc3">
         <div class="contato-wrapper">
             <div class="contato-left"></div>
 
@@ -204,7 +204,7 @@
         </div>
     </section>
 
-    <section class="sessao-orcamento">
+    <section class="sessao-orcamento" id="topc4">
         <div class="orcamento-wrapper">
             <h1>Faça um orçamento</h1>
             <form>
@@ -224,12 +224,33 @@
                     </div>
                 </div>
 
-                <label for="prazo">Prazo</label>
-                <input type="range" name="prazo" id="prazo">
+                <label for="prazo">Prazo:</label>
+                <input type="range" name="prazo" id="prazo" min="1" max="10">
+                <label id="preco">Valor: R$0,00</label>
                 <button type="submit" class="btn btn-orcamento">Enviar</button>
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2023, Moab Leandro - Todos os direitos reservados
+            </p>
+            <div class="social-list">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#topc0" id="link-topo">
+        <i class="fas fa-arrow-up">
+        </i>
+    </a>
 
     <script src="script.js"></script>
 </body>
